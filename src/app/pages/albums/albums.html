@@ -1,0 +1,7 @@
+<h1>Páginas de Albums</h1>
+@for (album of albums(); track album.id) {
+  <div>
+    <h2>{{ album.userId }}</h2>
+    <p>{{ album.title }}</p>
+  </div>
+}

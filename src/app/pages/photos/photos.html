@@ -1,0 +1,8 @@
+<h1>Página de Photos</h1>
+@for (photo of photos(); track photo.albumId) {
+  <div>
+    <h2>{{ photo.title }}</h2>
+    <h3>{{ photo.url }}</h3>
+    <h3>{{ photo.thumbnailUrl }}</h3>
+  </div>
+}

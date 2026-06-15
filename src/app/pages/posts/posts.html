@@ -1,0 +1,7 @@
+<h1>Página de Posts</h1>
+@for (post of posts(); track post.id) {
+  <div>
+    <h2>{{ post.title }}</h2>
+    <p>{{ post.body }}</p>
+  </div>
+}

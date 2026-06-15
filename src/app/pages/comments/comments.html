@@ -1,0 +1,10 @@
+<h1>Página de Comments</h1>
+@for (comment of comments(); track comment.postId) {
+  <div>
+    <h2>{{ comment.postId }}</h2>
+    <h3>{{ comment.name }}</h3>
+    <h3>{{ comment.email }}</h3>
+    <h4>{{ comment.body }}</h4>
+
+  </div>
+}
