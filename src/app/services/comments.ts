@@ -17,4 +17,8 @@ export class CommentService {
       'https://jsonplaceholder.typicode.com/comments'
     );
   }
+
+  getCommentById(id: number) {
+    return this.http.get<Comment>(`https://jsonplaceholder.typicode.com/comments/${id}`);
+  }
 }

@@ -17,4 +17,7 @@ export class PhotoService {
       'https://jsonplaceholder.typicode.com/photos'
     );
   }
+  getPhotoById(id: number) {
+    return this.http.get<Photo>(`https://jsonplaceholder.typicode.com/photos/${id}`);
+  }
 }

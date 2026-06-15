@@ -1,0 +1,8 @@
+@if (todos(); as t) {
+<div>
+    <h2>{{ t.title }}</h2>
+    <p>{{ t.completed }}</p>
+  </div>
+} @else {
+<p>Carregando...</p>
+}

@@ -1,0 +1,11 @@
+@if (users(); as u) {
+<div>
+    <h2>{{ u.name }}</h2>
+    <h3>{{ u.name }}</h3>
+    <p>{{ u.email }}</p>
+    <p>{{ u.phone }}</p>
+    <p>{{ u.website }}</p>
+  </div>
+} @else {
+<p>Carregando...</p>
+}

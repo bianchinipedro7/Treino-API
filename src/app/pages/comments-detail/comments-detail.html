@@ -1,0 +1,12 @@
+@if (comment(); as c) {
+<div>
+    
+    <h2>{{ c.postId }}</h2>
+    <h3>{{ c.name }}</h3>
+    <h3>{{ c.email }}</h3>
+    <h4>{{ c.body }}</h4>
+
+  </div>
+} @else {
+<p>Carregando...</p>
+}

@@ -1,1 +1,10 @@
-<p>users works!</p>
+<h1>Página de Users</h1>
+@for (user of users(); track user.id) {
+  <div>
+    <h2>{{ user.name }}</h2>
+    <h3>{{ user.username }}</h3>
+    <p>{{ user.email }}</p>
+    <p>{{ user.phone }}</p>
+    <p>{{ user.website }}</p>
+  </div>
+}

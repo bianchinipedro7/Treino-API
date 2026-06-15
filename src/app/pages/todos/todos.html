@@ -1,1 +1,7 @@
-<p>todos works!</p>
+<h1>Página de Todos</h1>
+@for (todos of todoss(); track todos.id) {
+  <div>
+    <h2>{{ todos.title }}</h2>
+    <p>{{ todos.completed }}</p>
+  </div>
+}

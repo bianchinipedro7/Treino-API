@@ -1,0 +1,10 @@
+@if (photo(); as ph) {
+<div>
+    <h2>{{ ph.title }}</h2>
+    <h3>{{ ph.url }}</h3>
+    <h3>{{ ph.thumbnailUrl }}</h3>
+  </div>
+
+} @else {
+<p>Carregando...</p>
+}

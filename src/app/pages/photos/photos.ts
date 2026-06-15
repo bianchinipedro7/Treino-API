@@ -2,7 +2,7 @@ import { Component, inject, OnInit, signal } from '@angular/core';
 import { Photo, PhotoService } from '../../services/photos';
 
 @Component({
-  selector: 'app-photo',
+  selector: 'app-photos',
   imports: [],
   templateUrl: './photos.html',
   styleUrl: './photos.css',

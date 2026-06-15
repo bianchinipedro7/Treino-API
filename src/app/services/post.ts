@@ -16,4 +16,9 @@ export class PostService {
       'https://jsonplaceholder.typicode.com/posts'
     );
   }
+
+  getPostById(id: number) {
+    return this.http.get<Post>(`https://jsonplaceholder.typicode.com/posts/${id}`);
+  }
+
 }
